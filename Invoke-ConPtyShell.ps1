@@ -1577,7 +1577,7 @@ class MainClass
 {
     static void Main(string[] args)
     {
-        Console.Out.Write(ConPtyShellMainClass.ConPtyShellMain(args));
+        ConPtyShellMainClass.ConPtyShellMain(args);
     }
 }
 
